@@ -21,7 +21,7 @@ else
     last_version=$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases?include_prereleases=true | sed -n 29p | tr -d ',"' | awk '{print $2}')
     yellow "xray最新版本号为： $last_version"
     echo "开始下载xray文件..."
-    wget https://github.com/XTLS/Xray-core/releases/download/$last_version/Xray-linux-64.zip
+    wget https://github.com/XTLS/Xray-core/releases/download/v25.4.30/Xray-linux-64.zip
     cd /root
     mkdir ./Xray
     unzip -d /root/Xray Xray-linux-64.zip
